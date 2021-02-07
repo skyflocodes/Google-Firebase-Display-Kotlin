@@ -15,11 +15,11 @@ I will need to know how to:
 </br>9. Access device information (date/time)
 </br>10. Save information from application to device
 ## Implemented Technologies ##
-</br>-API for finding live player and team stats
+-API for finding live player and team stats
 </br>-user date and time info
 </br>-database for seasons games with dates and player info
 ## Database/API's to be included: ##
-</br>-API for finding live player stats
+-API for finding live player stats
 </br>-API for finding live team stats
 </br>-database for seasons games with dates
 </br>-databse for player info
