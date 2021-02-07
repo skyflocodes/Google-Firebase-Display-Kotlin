@@ -22,4 +22,4 @@ I will need to know how to:
 -API for finding live player stats
 </br>-API for finding live team stats
 </br>-database for seasons games with dates
-</br>-databse for player info
+</br>-databse for player info and photos
