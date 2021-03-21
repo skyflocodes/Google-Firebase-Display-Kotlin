@@ -4,24 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ViewRosterActivity">
 
     <Button
         android:id="@+id/button"
-        android:layout_width="331dp"
-        android:layout_height="108dp"
-        android:layout_marginTop="320dp"
-        android:text="View Roster"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="331dp"
-        android:layout_height="108dp"
-        android:layout_marginBottom="112dp"
-        android:text="Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:text="Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -30,11 +20,11 @@
         android:id="@+id/textView2"
         android:layout_width="190dp"
         android:layout_height="46dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="24dp"
         android:text="TEAM NAME"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,27 +36,42 @@
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintVertical_bias="0.041" />
 
     <androidx.constraintlayout.widget.Group
         android:id="@+id/group"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:constraint_referenced_ids="button2" />
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="331dp"
-        android:layout_height="37dp"
-        android:text="Team Avg PPG:"
+        android:layout_width="129dp"
+        android:layout_height="36dp"
+        android:text="APPG:"
         android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.325" />
+        app:layout_constraintVertical_bias="0.125" />
+
+    <TableLayout
+        android:layout_width="340dp"
+        android:layout_height="446dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.617">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

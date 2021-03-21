@@ -3,21 +3,19 @@ package com.example.teamviewapp;
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import com.example.teamviewapp.databinding.ActivityMainBinding
+import com.example.teamviewapp.databinding.ActivityViewRosterBinding
 
-class MainActivity : AppCompatActivity() {
+class ViewRosterActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
+    private lateinit var binding: ActivityViewRosterBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityViewRosterBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
-        Log.i("LifeCycle", "MainActivity.onCreate() method")
         binding.button.setOnClickListener {
-            var intent = Intent(this, ViewRosterActivity::class.java)
+            var intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
