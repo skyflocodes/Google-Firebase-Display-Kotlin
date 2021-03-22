@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "436919532184",
+    "project_id": "basketballapp-8948e",
+    "storage_bucket": "basketballapp-8948e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:436919532184:android:d221e3c0bb99a26e70eeed",
+        "android_client_info": {
+          "package_name": "com.example.teamviewapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "436919532184-gofts9k15klu7mvocu3k5iu1m6ji34k2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByrKVpGsjXTuLPAu29PcNAeOIMn2tuUUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "436919532184-gofts9k15klu7mvocu3k5iu1m6ji34k2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
