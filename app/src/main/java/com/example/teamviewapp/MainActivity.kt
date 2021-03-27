@@ -20,5 +20,6 @@ class MainActivity : AppCompatActivity() {
             var intent = Intent(this, ViewRosterActivity::class.java)
             startActivity(intent)
         }
+
     }
 }
