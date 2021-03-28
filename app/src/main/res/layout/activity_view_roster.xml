@@ -60,19 +60,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.125" />
 
-    <TableLayout
-        android:layout_width="340dp"
-        android:layout_height="446dp"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="344dp"
+        android:layout_height="422dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.617">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="50dp" />
-    </TableLayout>
+        app:layout_constraintVertical_bias="0.647"></LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
