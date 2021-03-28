@@ -2,6 +2,7 @@ package com.example.teamviewapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +19,12 @@ class CreatePlayerActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.viewRosterButton.setOnClickListener {
+            if (binding.editTextPersonName.text.toString().isNotBlank() && binding.spinner.selectedItemPosition>0){
+                val player = Player()
+
+            } else {
+                Toast.makeText(this,"player name and average PPG required", Toast.LENGTH_LONG).show()
+            }
             var intent = Intent(this, ViewRosterActivity::class.java)
             startActivity(intent)
         }

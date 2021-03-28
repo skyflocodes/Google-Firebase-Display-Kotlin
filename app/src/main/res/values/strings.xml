@@ -10,10 +10,46 @@
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="save">Save</string>
-    <string name="textview">TextView</string>
+    <string name="text_view">TextView</string>
     <string name="add_a_player">Add a Player</string>
     <string name="name">Name</string>
     <string name="team_name">TEAM NAME</string>
     <string name="create_new_player_button_label">Create New Player</string>
     <string name="average_points_per_game_label">APPG:</string>
+    <string-array name="appg">
+        <item>Select Players Average Points Per Game</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>31</item>
+        <item>32</item>
+        <item>33</item>
+        <item>34</item>
+        <item>35</item>
+    </string-array>
 </resources>
