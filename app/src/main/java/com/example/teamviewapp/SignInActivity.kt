@@ -42,7 +42,7 @@ class SignInActivity : AppCompatActivity() {
                 // Successfully signed in
                 val user = FirebaseAuth.getInstance().currentUser
                 // ...
-                var intent = Intent(this, MainActivity::class.java)
+                var intent = Intent(this, ViewRosterActivity::class.java)
                 startActivity(intent)
             } else {
                 // Sign in failed. If response is null the user canceled the

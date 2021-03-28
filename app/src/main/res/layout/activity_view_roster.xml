@@ -7,13 +7,14 @@
     tools:context=".ViewRosterActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/createPlayerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:text="Back"
+        android:layout_marginBottom="32dp"
+        android:text="@string/create_new_player_button_label"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -21,8 +22,8 @@
         android:layout_width="190dp"
         android:layout_height="46dp"
         android:layout_marginTop="24dp"
-        android:text="TEAM NAME"
-        android:textSize="30sp"
+        android:text="@string/team_name"
+        android:textSize="@dimen/header_font_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
         app:layout_constraintStart_toEndOf="@+id/imageView"
@@ -30,7 +31,7 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="145dp"
+        android:layout_width="134dp"
         android:layout_height="134dp"
         android:background="@drawable/background"
         android:scaleType="centerInside"
@@ -50,8 +51,8 @@
         android:id="@+id/textView"
         android:layout_width="129dp"
         android:layout_height="36dp"
-        android:text="APPG:"
-        android:textSize="30sp"
+        android:text="@string/average_points_per_game_label"
+        android:textSize="@dimen/header_font_size"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.822"
@@ -71,7 +72,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="50dp" />
     </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

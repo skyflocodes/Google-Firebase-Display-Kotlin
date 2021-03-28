@@ -13,9 +13,11 @@ class ViewRosterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityViewRosterBinding.inflate(layoutInflater)
         val view = binding.root
+
         setContentView(view)
-        binding.button.setOnClickListener {
-            var intent = Intent(this, MainActivity::class.java)
+
+        binding.createPlayerButton.setOnClickListener {
+            var intent = Intent(this, CreatePlayerActivity::class.java)
             startActivity(intent)
         }
     }
