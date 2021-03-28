@@ -28,6 +28,14 @@ class CreatePlayerActivity : AppCompatActivity() {
                 val db = FirebaseFirestore.getInstance().collection("players")
                 player.id = db.document().id
                 db.document(player.id!!).set(player)
+                    .addOnSuccessListener {
+                        Toast.makeText(this,"Player Added!", Toast.LENGTH_LONG).show()
+                        binding.editTextPersonName.setText("")
+                        binding.spinner.setSelection(0)
+                    }
+                    .addOnFailureListener{
+                        Toast.makeText(this, it.localizedMessage, Toast.LENGTH_LONG).show()
+                    }
 
             } else {
                 Toast.makeText(this,"player name and average PPG required", Toast.LENGTH_LONG).show()
