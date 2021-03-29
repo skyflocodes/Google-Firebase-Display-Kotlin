@@ -24,7 +24,7 @@ class ViewRosterActivity : AppCompatActivity() {
             for (document in documents){
                 val player = document.toObject(Player::class.java)
                 val textView = TextView(this)
-                val playerString = player.name + ", APPG: " + player.appg.toString()
+                val playerString = player.fName + " " + player.lName + ", Averages: " + player.appg.toString() + " Points per game."
                 textView.text = playerString
                 textView.textSize = 20f
 

@@ -20,28 +20,32 @@ class CreatePlayerActivity : AppCompatActivity() {
         setContentView(view)
 
         binding.viewRosterButton.setOnClickListener {
-            if (binding.editTextPersonName.text.toString().isNotBlank() && binding.spinner.selectedItemPosition>0){
+            if (binding.editTextPersonLastName.text.toString().isNotBlank() && binding.editTextPersonFirstName.text.toString().isNotBlank() && binding.editPlayerNumber.text.isNotBlank() && binding.editPlayerNumber.text.toString().toInt()>=0 && binding.editPlayerNumber.text.toString().toInt()<100){
                 val player = Player()
-                player.name = binding.editTextPersonName.text.toString()
-                player.appg = binding.spinner.selectedItem.toString().toInt()
+                val firstName = binding.editTextPersonFirstName.text.toString()
+                player.fName = firstName.capitalize()
+                val lastName = binding.editTextPersonLastName.text.toString()
+                player.lName = lastName.capitalize()
+                player.appg = binding.editPlayerNumber.text.toString().toInt()
 
                 val db = FirebaseFirestore.getInstance().collection("players")
                 player.id = db.document().id
                 db.document(player.id!!).set(player)
                     .addOnSuccessListener {
                         Toast.makeText(this,"Player Added!", Toast.LENGTH_LONG).show()
-                        binding.editTextPersonName.setText("")
-                        binding.spinner.setSelection(0)
+                        binding.editTextPersonFirstName.setText("")
+                        binding.editTextPersonLastName.setText("")
+                        binding.editPlayerNumber.setSelection(0)
                     }
                     .addOnFailureListener{
                         Toast.makeText(this, it.localizedMessage, Toast.LENGTH_LONG).show()
                     }
-
+                var intent = Intent(this, ViewRosterActivity::class.java)
+                startActivity(intent)
             } else {
-                Toast.makeText(this,"player name and average PPG required", Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Player name and average PPG required. PPG must also be between 1 and 99.", Toast.LENGTH_LONG).show()
             }
-            var intent = Intent(this, ViewRosterActivity::class.java)
-            startActivity(intent)
+
         }
     }
 }
