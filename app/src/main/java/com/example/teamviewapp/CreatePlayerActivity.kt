@@ -43,7 +43,7 @@ class CreatePlayerActivity : AppCompatActivity() {
                 var intent = Intent(this, ViewRosterActivity::class.java)
                 startActivity(intent)
             } else {
-                Toast.makeText(this,"Player name and average PPG required. PPG must also be between 1 and 99.", Toast.LENGTH_LONG).show()
+                Toast.makeText(this,"Player name and average PPG required. PPG must also be between 0 and 99.", Toast.LENGTH_LONG).show()
             }
 
         }

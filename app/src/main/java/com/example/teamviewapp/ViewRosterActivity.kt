@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import androidx.activity.viewModels
+import androidx.lifecycle.Observer
 import androidx.lifecycle.observe
 import com.example.teamviewapp.databinding.ActivityViewRosterBinding
 import com.google.firebase.firestore.FirebaseFirestore
@@ -20,18 +21,24 @@ class ViewRosterActivity : AppCompatActivity() {
         setContentView(view)
 
         val model : PlayerListViewModel by viewModels()
-        model.getPlayers().observe( this) {
-            binding.linearLayout.removeAllViews()
+        model.getPlayers().observe(this, Observer <List<Player>>{   players->
+            var recyclerAdapter = RecyclerViewAdapter(this, players)
+            binding.verticalRecyclerView.adapter = recyclerAdapter
+        })
 
-            for (player in it) {
-                val textView = TextView(this)
-                val playerString = player.fName + " " + player.lName + ", Averages: " + player.appg.toString() + " Points per game."
-                textView.text = playerString
-                textView.textSize = 20f
-
-                binding.linearLayout.addView(textView)
-            }
-        }
+//        val model : PlayerListViewModel by viewModels()
+//        model.getPlayers().observe( this) {
+//            binding.linearLayout.removeAllViews()
+//
+//            for (player in it) {
+//                val textView = TextView(this)
+//                val playerString = player.fName + " " + player.lName + ", Averages: " + player.appg.toString() + " Points per game."
+//                textView.text = playerString
+//                textView.textSize = 20f
+//
+//                binding.linearLayout.addView(textView)
+//            }
+//        }
 
 //        val db = FirebaseFirestore.getInstance().collection("players")
 //        db.get().addOnSuccessListener { documents ->
