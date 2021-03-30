@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 class RecyclerViewAdapter (val context: Context, val players : List<Player>) : RecyclerView.Adapter<RecyclerViewAdapter.PlayerViewHolder>(){
     inner class PlayerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val nameTextView = itemView.findViewById<TextView>(R.id.nameTextView)
+        val nameTextView2 = itemView.findViewById<TextView>(R.id.nameTextView2)
         val pointsTextView = itemView.findViewById<TextView>(R.id.pointsTextView)
     }
 
@@ -23,9 +24,10 @@ class RecyclerViewAdapter (val context: Context, val players : List<Player>) : R
     override fun onBindViewHolder(holder: PlayerViewHolder, position: Int) {
         val player = players[position]
         with(holder){
-            val nameString = player.lName + ", " + player.fName
-            nameTextView.text = nameString
-            val pointsString = "APPG: " + player.appg.toString()
+
+            nameTextView.text = player.lName
+            nameTextView2.text = player.fName
+            val pointsString = "Average P/G: " + player.appg.toString()
             pointsTextView.text = pointsString
         }
     }

@@ -1,29 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="horizontal"
-    android:layout_margin="@dimen/margin_side"
-    android:clickable="true"
-    android:focusable="true">
+    android:layout_margin="5dp"
+    android:background="@drawable/item_background">
 
     <TextView
         android:id="@+id/nameTextView"
-        android:layout_width="@dimen/name_width"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight=".8"
-        tools:text="JeBron Lames"
         android:gravity="center_vertical"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/nameTextView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="5dp"
+        tools:text="JeBron Lames" />
 
     <TextView
-        android:id="@+id/pointsTextView"
-        android:layout_width="@dimen/name_width"
+        android:id="@+id/nameTextView2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight=".8"
-        tools:text="APPG: 25"
-        android:gravity="center_horizontal"
-        android:textSize="20sp"/>
+        android:gravity="center_vertical"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/pointsTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView"
+        tools:text="JeBron Lames" />
 
-</android.widget.LinearLayout>
+    <TextView
+        android:layout_margin="5dp"
+        android:id="@+id/pointsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight=".8"
+        android:gravity="center_horizontal"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTextView2"
+        tools:text="APPG: 25" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

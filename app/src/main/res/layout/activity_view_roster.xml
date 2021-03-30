@@ -32,7 +32,7 @@
         android:layout_width="134dp"
         android:layout_height="134dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/background"
+        android:background="@drawable/logo"
         android:scaleType="centerInside"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.057"
@@ -58,23 +58,13 @@
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="344dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="48dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"></LinearLayout>
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/verticalRecyclerView"
         android:layout_width="344dp"
         android:layout_height="0dp"
         android:layout_marginTop="48dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
