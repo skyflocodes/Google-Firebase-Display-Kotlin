@@ -1,33 +1,70 @@
 {
   "project_info": {
-    "project_number": "436919532184",
-    "project_id": "basketballapp-8948e",
-    "storage_bucket": "basketballapp-8948e.appspot.com"
+    "project_number": "948393765226",
+    "project_id": "basketballapp-31475",
+    "storage_bucket": "basketballapp-31475.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:436919532184:android:d221e3c0bb99a26e70eeed",
+        "mobilesdk_app_id": "1:948393765226:android:031835f8269a19e72e9d13",
         "android_client_info": {
-          "package_name": "com.example.teamviewapp"
+          "package_name": "com.LH1109038.teamviewapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "436919532184-gofts9k15klu7mvocu3k5iu1m6ji34k2.apps.googleusercontent.com",
+          "client_id": "948393765226-cs4d596mq0hr589ntka0i88ubsqp7h9u.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyByrKVpGsjXTuLPAu29PcNAeOIMn2tuUUg"
+          "current_key": "AIzaSyB3_R0ozvL3F8rrJOsEZQPVf_729OjXJfg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "436919532184-gofts9k15klu7mvocu3k5iu1m6ji34k2.apps.googleusercontent.com",
+              "client_id": "948393765226-cs4d596mq0hr589ntka0i88ubsqp7h9u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:948393765226:android:4f614963be3970fd2e9d13",
+        "android_client_info": {
+          "package_name": "com.skyflocodes.BasketballApp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "948393765226-untjf8qf7fdouab7vb6i112ap803jnd0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.skyflocodes.BasketballApp",
+            "certificate_hash": "39cfa9d3b5f866fbba0b1c85338fa324ff411c9b"
+          }
+        },
+        {
+          "client_id": "948393765226-cs4d596mq0hr589ntka0i88ubsqp7h9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3_R0ozvL3F8rrJOsEZQPVf_729OjXJfg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "948393765226-cs4d596mq0hr589ntka0i88ubsqp7h9u.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
