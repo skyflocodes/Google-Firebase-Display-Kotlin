@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="15dp"
+    android:background="#2c2c2c"
     tools:context=".ViewRosterActivity">
 
     <Button
@@ -16,9 +17,12 @@
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
         android:text="@string/save"
+        android:textColor="#2c2c2c"
+        app:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPersonLastName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPersonLastName"
+        app:rippleColor="#FFFFFF" />
 
     <TextView
         android:id="@+id/textView3"
@@ -26,6 +30,7 @@
         android:layout_height="wrap_content"
         android:text="@string/add_a_player"
         android:textSize="@dimen/header_font_size"
+        android:textColor="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -38,6 +43,7 @@
         android:layout_marginEnd="420dp"
         android:layout_marginRight="420dp"
         android:ems="10"
+        android:textColor="#FFF"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,6 +58,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:text="Last Name:"
+        android:textColor="#FFF"
         app:layout_constraintEnd_toStartOf="@+id/editTextPersonLastName"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -65,6 +72,7 @@
         android:layout_marginEnd="420dp"
         android:layout_marginRight="420dp"
         android:ems="10"
+        android:textColor="#FFF"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -77,6 +85,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         android:text="First Name:"
+        android:textColor="#FFF"
         app:layout_constraintEnd_toStartOf="@+id/editTextPersonFirstName"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -89,6 +98,7 @@
         android:layout_marginEnd="76dp"
         android:layout_marginRight="76dp"
         android:ems="10"
+        android:textColor="#FFF"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -105,6 +115,7 @@
         android:layout_marginEnd="104dp"
         android:layout_marginRight="104dp"
         android:text="Average Points Per Game:"
+        android:textColor="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/editTextPersonFirstName"

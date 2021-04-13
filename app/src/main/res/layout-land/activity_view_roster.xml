@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2c2c2c"
     tools:context=".ViewRosterActivity">
 
     <ImageView
@@ -25,6 +26,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
         android:text="@string/create_new_player_button_label"
+        android:textColor="#2c2c2c"
+        app:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
@@ -37,6 +40,7 @@
         android:layout_marginLeft="16dp"
         android:text="Team View"
         android:textSize="@dimen/header_font_size"
+        android:textColor="#FFF"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#2c2c2c"
     tools:context=".ViewRosterActivity">
 
     <Button
@@ -13,6 +14,8 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="15dp"
         android:text="@string/create_new_player_button_label"
+        android:textColor="#2c2c2c"
+        app:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/verticalRecyclerView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.464"
@@ -27,6 +30,7 @@
         android:layout_marginTop="28dp"
         android:text="Team View"
         android:textSize="@dimen/header_font_size"
+        android:textColor="#FFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.459"
         app:layout_constraintStart_toEndOf="@+id/imageView"
