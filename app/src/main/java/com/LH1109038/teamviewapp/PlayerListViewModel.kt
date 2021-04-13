@@ -20,7 +20,7 @@ class PlayerListViewModel : ViewModel(){
 
     private fun loadPlayers(){
         val db = FirebaseFirestore.getInstance().collection("players")
-                .orderBy("lname", Query.Direction.ASCENDING)
+                .orderBy("appg", Query.Direction.DESCENDING)
         db.addSnapshotListener{ documents, exception ->
             if (exception != null){
                 return@addSnapshotListener

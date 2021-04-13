@@ -5,13 +5,27 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.LH1109038.teamviewapp.databinding.ActivityCreatePlayerBinding
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
 class CreatePlayerActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCreatePlayerBinding
+    private val authDb = FirebaseAuth.getInstance();
+
+    private fun logout(){
+        authDb.signOut()
+        finish()
+        var intent = Intent(this, SignInActivity::class.java)
+        startActivity(intent)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        if (authDb.currentUser == null){
+            logout()
+        }
+
         super.onCreate(savedInstanceState)
         binding = ActivityCreatePlayerBinding.inflate(layoutInflater)
         val view = binding.root

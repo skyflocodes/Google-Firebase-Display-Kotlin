@@ -6,12 +6,26 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.lifecycle.Observer
 import com.LH1109038.teamviewapp.databinding.ActivityViewRosterBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class ViewRosterActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityViewRosterBinding
+    private val authDb = FirebaseAuth.getInstance();
+
+    private fun logout(){
+        authDb.signOut()
+        finish()
+        var intent = Intent(this, SignInActivity::class.java)
+        startActivity(intent)
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+        if (authDb.currentUser == null){
+            logout()
+        }
+
         super.onCreate(savedInstanceState)
         binding = ActivityViewRosterBinding.inflate(layoutInflater)
         val view = binding.root

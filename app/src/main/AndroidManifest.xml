@@ -11,13 +11,13 @@
         android:theme="@style/Theme.TeamViewApp">
         <activity android:name="com.LH1109038.teamviewapp.CreatePlayerActivity"/>
         <activity android:name="com.LH1109038.teamviewapp.SignInActivity" >
-
-        </activity>
-        <activity android:name="com.LH1109038.teamviewapp.ViewRosterActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
+        </activity>
+        <activity android:name="com.LH1109038.teamviewapp.ViewRosterActivity">
+
         </activity>
 
     </application>
